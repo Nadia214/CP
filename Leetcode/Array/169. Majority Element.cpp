@@ -1,3 +1,5 @@
+// TC: O(N)
+// MC: O(1)
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -6,13 +8,13 @@ public:
         for (auto num : nums){
             if(vote_count == 0)
                 winner = num;
-
+            
             if(num == winner)
                 vote_count++;
-            else
+            else 
                 vote_count--;
         }
-
+        
       return winner;
     }
 };

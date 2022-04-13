@@ -1,3 +1,5 @@
+// TC: O(N)
+// MC: O(N)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -7,11 +9,11 @@ public:
             if(seen.count(remaining)){
                 return {seen[remaining],i};
             }
-
+            
             seen[nums[i]] = i;
         }
-
+        
     return {};
-
+        
     }
 };

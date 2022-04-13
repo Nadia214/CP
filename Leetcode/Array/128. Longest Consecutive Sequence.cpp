@@ -1,8 +1,10 @@
+// TC: O(N)
+// MC: O(N)
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
         unordered_set<int>bucket(nums.begin(),nums.end());
-
+        
         int longest_seq_len = 0;
         for(auto num: bucket){
             if(bucket.count(num-1) == 0){
