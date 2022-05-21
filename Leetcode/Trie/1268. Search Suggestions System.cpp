@@ -1,8 +1,11 @@
+//1268. Search Suggestions System
+//TC- O(m * n + L) - where m average length of products, n = products.length , L = searchWord.length().
+// SC- O(m * n + L * m)
 class Solution {
 public:
     class TrieNode
     {
-     public:
+     public: 
         string word;
         TrieNode* next[26];
         TrieNode(){
@@ -34,7 +37,7 @@ public:
     void dfs(TrieNode* u, vector<string>& words)
     {
         if(u == NULL || words.size() == 3)return;
-
+        
         if(u -> word.size() > 0 && words.size() < 3){
             words.push_back(u -> word);
         }
@@ -43,7 +46,7 @@ public:
         }
     }
     vector<vector<string>> suggestedProducts(vector<string>& products, string searchWord) {
-      TrieNode* root = generateTrieNode(products);
+      TrieNode* root = generateTrieNode(products);  
       vector<vector<string>> suggestions;
       for(auto c : searchWord)
       {
@@ -51,7 +54,7 @@ public:
           vector<string>words;
           dfs(root,words);
           suggestions.push_back(words);
-      }
+      }  
       return suggestions;
     }
 };

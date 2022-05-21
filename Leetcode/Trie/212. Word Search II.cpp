@@ -1,3 +1,8 @@
+//212. Word Search II
+//m = number of rows; n = number of columns
+//w = number of words; k = the average length of words in the lists
+//TC - O(m * n * 3^k)
+//SC - O(w * k)
 class Solution {
 public:
   class TrieNode
