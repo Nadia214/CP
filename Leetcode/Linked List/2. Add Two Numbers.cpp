@@ -1,5 +1,5 @@
 //2. Add Two Numbers
-//TC - O(N)
+//TC - O(N) where N  = total number of Nodes in the list
 //SC - O(N)
 class Solution {
 public:

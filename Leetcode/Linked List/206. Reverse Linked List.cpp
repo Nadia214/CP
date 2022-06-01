@@ -1,5 +1,5 @@
 //206. Reverse Linked List
-//Time Complexity : O(N)
+//Time Complexity : O(N) where N = total number of Nodes
 //Space Complexity : O(1)
 class Solution {
 public:

@@ -1,4 +1,5 @@
-//Tc - O(n)
+//138. Copy List with Random Pointer
+//Tc - O(N)
 //Sc - O(1)
 class Solution {
 public:

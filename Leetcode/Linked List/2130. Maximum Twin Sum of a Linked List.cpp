@@ -1,5 +1,5 @@
 //2130. Maximum Twin Sum of a Linked List
-//TC - O(N)
+//TC - O(N) where N is the total number of nodes.
 //SC - O(1)
 class Solution {
 public:
