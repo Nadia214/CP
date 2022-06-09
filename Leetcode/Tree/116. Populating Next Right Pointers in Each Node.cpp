@@ -1,9 +1,9 @@
 //116. Populating Next Right Pointers in Each Node
 //SC- O(N), where N is the number of nodes in a tree
 //TC -O(n)
-class Solution {
+class Solution{
 public:
-    Node* connect(Node* root) {
+    Node* connect(Node* root){
         if(!root) return NULL;
         queue<Node*> q;
         q.push(root);
@@ -15,7 +15,7 @@ public:
                 q.pop();
                 curr -> next = rightNode;
                 rightNode = curr;
-                if(curr -> right) {
+                if(curr -> right){
                     q.push(curr -> right);
                     q.push(curr -> left);
                 }
