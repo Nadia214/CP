@@ -5,22 +5,22 @@ class Solution {
 public:
     Node* connect(Node* root) {
         if(!root) return NULL;
-		queue<Node*> q;
-		q.push(root);
-		while(!q.empty()) {
-			Node* rightNode = NULL;
-			int sz = q.size();
-			for(int i = 0; i < sz; i++) {
-				auto curr = q.front();
-				q.pop();
-				curr -> next = rightNode;
+        queue<Node*> q;
+        q.push(root);
+        while(!q.empty()) {
+            Node* rightNode = NULL;
+            int sz = q.size();
+            for(int i = 0; i < sz; i++){
+                auto curr = q.front();
+                q.pop();
+                curr -> next = rightNode;
                 rightNode = curr;
-				if(curr -> right) {
-					q.push(curr -> right);
-					q.push(curr -> left);
-				}
-			}
-		}
-        return root;
+                if(curr -> right) {
+                    q.push(curr -> right);
+                    q.push(curr -> left);
+                }
+            }
+        }
+    return root;
     }
 };
