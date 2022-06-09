@@ -1,8 +1,7 @@
 //98. Validate Binary Search Tree
 //TC: O(N) , where N is number of nodes in a tree
 //SC: O(n)
-class Solution
-{
+class Solution {
 public:
     bool validateBST(TreeNode* root, long long L_min, long long R_max ){
         if(!root)  return true;

@@ -6,7 +6,6 @@ public:
     bool check(TreeNode* L, TreeNode* R) {
         if(!L && !R) return true;
         if(!L || !R || L->val != R->val) return false;
-
         return (check(L->left, R->right) && check(L->right, R->left));
     }
     bool isSymmetric(TreeNode* root) {

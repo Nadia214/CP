@@ -5,7 +5,7 @@ class Solution {
 public:
     TreeNode* constructBST(vector<int>& nums, int L, int R) {
 		if(L > R) return NULL;
-		int M = L +(R - L)/2;
+	    int M = L +(R - L)/2;
 		TreeNode* curr = new TreeNode(nums[M]);
 		curr ->left = constructBST(nums, L, M-1);
 		curr ->right = constructBST(nums, M + 1, R);

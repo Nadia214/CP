@@ -8,7 +8,6 @@ public:
         queue<TreeNode*> q;
         q.push(root);
         int depth = 0;
-
         while(!q.empty()) {
             depth++;
             int sz = q.size();
