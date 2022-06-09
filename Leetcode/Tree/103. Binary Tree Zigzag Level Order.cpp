@@ -17,7 +17,6 @@ public:
         vector<vector<int>>result;
         if(!root) return result;
         getOrder(root, result, 0);
-
         for(int i = 1; i < result.size(); i = i + 2){
             reverse(result[i].begin(), result[i].end());
         }
