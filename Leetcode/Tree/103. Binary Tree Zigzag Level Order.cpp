@@ -3,8 +3,7 @@
 //SC : O(n) for result vector
 Time:
 O(n)
-class Solution
-{
+class Solution {
 public:
     void getOrder(TreeNode*root, vector<vector<int>>& result, int level){
         if(!root) return;
